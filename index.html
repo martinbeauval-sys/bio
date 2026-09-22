@@ -52,7 +52,7 @@
     transition:transform .12s ease,border-color .12s ease;box-shadow:0 10px 30px rgba(0,0,0,.25)}
   a.card:active{transform:scale(.985)}
   a.card:hover{border-color:#3a4353}
-  .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:14px;letter-spacing:.02em;color:var(--ink);background:#232a35;border:1px solid var(--line)}
+  .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:15px;letter-spacing:.02em;color:var(--ink);background:#232a35;border:1px solid var(--line)}
   .ico.y{background:var(--yellow);color:var(--yellow-ink);border-color:transparent}
   .ico.r{background:#e2352b;border-color:transparent}
   .ico img{width:28px;height:28px;object-fit:contain}
@@ -65,7 +65,7 @@
   a.card.primary .arrow{color:rgba(17,17,17,.6)}
 
   /* preuves */
-  .proof{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .proof{margin-top:24px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
   .proof div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 8px;text-align:center}
   .proof b{display:block;font-size:20px;font-weight:800;color:var(--yellow);letter-spacing:-.01em}
   .proof span{display:block;margin-top:3px;font-size:11px;color:var(--muted);line-height:1.3;font-weight:500}
@@ -86,57 +86,56 @@
     <h1 class="name">Martin Beauval<svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f8d74f"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#111" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></h1>
     <p class="role"><b>26 ans</b> · entrepreneur et investisseur immobilier</p>
     <div class="tag"><span class="flag">🇫🇷 🇲🇦</span> France &amp; Maroc</div>
-    <p class="pitch">Je construis les entreprises qui font tourner l'immobilier : conciergeries, réseau de conseillers, logiciel. <span>Ici, tout est au même endroit.</span></p>
+    <p class="pitch">Opérateur, pas formateur. Je dirige les entreprises qui font tourner l'immobilier : conciergeries, réseau de conseillers, logiciel, transactions. <span>Dis-moi ce que tu veux faire, je t'emmène au bon endroit.</span></p>
   </header>
 
-  <section class="section">
-    <p class="kicker">Commencer ici</p>
-    <div class="links">
-      <a class="card primary" href="https://martinbeauval-sys.github.io/masterclass/menage/">
-        <div class="ico">45'</div>
-        <div><div class="t">Masterclass gratuite : lancer sa conciergerie</div><div class="s">45 minutes de méthode, sans laisser ton mail. Le système que 600 conciergeries appliquent.</div></div>
-        <div class="arrow">›</div>
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
-    <p class="kicker">Mes entreprises</p>
-    <div class="links">
-      <a class="card" href="https://conciergelite.fr/">
-        <div class="ico y">CE</div>
-        <div><div class="t">ConciergElite</div><div class="s">L'accompagnement n°1 pour créer et développer sa conciergerie Airbnb en France.</div></div>
-        <div class="arrow">›</div>
-      </a>
-      <a class="card" href="https://saafka.com/">
-        <div class="ico">SF</div>
-        <div><div class="t">Saafka</div><div class="s">Le réseau de conseillers immobiliers nouvelle génération au Maroc.</div></div>
-        <div class="arrow">›</div>
-      </a>
-      <a class="card" href="https://agencenode.com/">
-        <div class="ico">ND</div>
-        <div><div class="t">Node</div><div class="s">Le seul channel manager qui amène des propriétaires aux conciergeries.</div></div>
-        <div class="arrow">›</div>
-      </a>
-    </div>
-  </section>
-
-  <section class="section">
-    <p class="kicker">Me suivre</p>
-    <div class="links">
-      <a class="card" href="https://www.youtube.com/@martinbeauval.conciergelite">
-        <div class="ico r">▶</div>
-        <div><div class="t">YouTube</div><div class="s">Les vidéos longues : coulisses, méthodes, témoignages de membres.</div></div>
-        <div class="arrow">›</div>
-      </a>
-    </div>
-  </section>
-
-  <div class="proof" aria-label="Chiffres clés">
+  <div class="proof" aria-label="Ce que j'opère">
     <div><b>+600</b><span>conciergeries accompagnées</span></div>
+    <div><b>4</b><span>entreprises en activité</span></div>
     <div><b>2</b><span>pays, France et Maroc</span></div>
-    <div><b>4</b><span>entreprises actives</span></div>
   </div>
+
+  <section class="section">
+    <p class="kicker">🇫🇷 En France</p>
+    <div class="links">
+      <a class="card primary" href="https://www.youtube.com/watch?v=ZiOWY0g6M4k">
+        <div class="ico">▶</div>
+        <div><div class="t">Je veux tout comprendre sur la conciergerie Airbnb</div><div class="s">La formation gratuite complète : se lancer en partant de zéro, en une vidéo.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://www.youtube.com/watch?v=LrCqVi3I-NE">
+        <div class="ico">ND</div>
+        <div><div class="t">Je veux automatiser ma conciergerie</div><div class="s">Le logiciel indispensable pour un Airbnb en 2026, et comment le choisir.</div></div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">🇲🇦 Au Maroc</p>
+    <div class="links">
+      <a class="card" href="https://lereseau-ma.com/rejoindre/doc?utm_source=instagram&utm_medium=bio&utm_campaign=lien-bio">
+        <div class="ico">LR</div>
+        <div><div class="t">Je veux ouvrir ma structure de gestion locative</div><div class="s">Le documentaire du Réseau : comment on lance une conciergerie au Maroc.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://join.saafka.com/">
+        <div class="ico y">SF</div>
+        <div><div class="t">Je veux devenir conseiller immobilier</div><div class="s">Rejoindre Saafka, le réseau de conseillers nouvelle génération.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://saafka.com/acheter">
+        <div class="ico">🔑</div>
+        <div><div class="t">Je veux investir dans l'immobilier</div><div class="s">Acheter un bien au Maroc avec un conseiller Saafka.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://saafka.com/vendre">
+        <div class="ico">🏠</div>
+        <div><div class="t">Je veux vendre mon logement</div><div class="s">Estimation et mise en vente par le réseau Saafka.</div></div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+  </section>
 
   <footer>
     <div class="social">
@@ -144,7 +143,7 @@
       <a href="https://www.youtube.com/@martinbeauval.conciergelite" aria-label="YouTube">YT</a>
       <a id="mail-icon" href="mailto:CONTACT_EMAIL" aria-label="Email">@</a>
     </div>
-    Une question, un partenariat, un média ?<br>
+    Pour toute autre demande, un partenariat, un média :<br>
     <a id="mail-link" href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>
     <div style="margin-top:14px;font-size:11px;color:var(--muted2)">© <span id="y"></span> Martin Beauval</div>
   </footer>
