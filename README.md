@@ -37,3 +37,8 @@ Même famille que les stories Média / Rencontres : fond #0f1216, halo doré, Po
 - Supprimés : pitch « Opérateur, pas formateur », les trois chiffres, l'icône @, la ligne « © 2026 ». Gardés : Instagram et YouTube avec leurs vrais pictogrammes (SVG inline), la ligne contact.
 - Six liens dans l'ordre exact de la page Notion, libellés repris de la page.
 - Hébergement : Martin ne veut pas d'adresse GitHub. Netlify et Vercel n'ont ni CLI ni jeton sur ce Mac, et Netlify n'est pas connecté dans Chrome : impossible sans que Martin se connecte ou achète un domaine.
+
+## v4 (23/09/2026, 00h30) et domaine
+- Pied de page supprimé (plus de ligne contact, plus d'icônes). Surlignage jaune des mots-clés voulus par Martin, ligne par ligne, avec `box-decoration-break:clone` pour que le surlignage suive les retours à la ligne.
+- Domaine : Martin achète `martinbeauval.com` (libre le 23/09 à 00h30, .com et .fr). Registrar proposé : OVH (une adresse email MX Plan incluse avec le domaine : `contact@martinbeauval.com` gratuite).
+- À faire dès l'achat : (1) zone DNS chez OVH : 4 enregistrements A sur `@` vers 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153, et un CNAME `www` vers `martinbeauval-sys.github.io.` ; (2) `gh api -X PUT repos/martinbeauval-sys/bio/pages -f cname=martinbeauval.com` puis HTTPS forcé ; (3) fichier `CNAME` à la racine du dépôt ; (4) mettre `https://martinbeauval.com` en bio du compte @martinbeauval.immo.
