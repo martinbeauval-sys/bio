@@ -35,17 +35,10 @@
   li a{display:grid;grid-template-columns:24px 1fr 16px;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;line-height:1.3}
   li:last-child a{border-bottom:0}
   li a .n{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:15px;color:var(--ink2)}
-  li a .t em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent) 62%)}
+  li a .t em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent) 62%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
   li a .ar{width:16px;height:16px;color:var(--ink)}
   li a:active{opacity:.55}
 
-  /* pied */
-  footer{margin-top:auto;padding-top:14px;border-top:1px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px}
-  footer p{font-size:12px;line-height:1.4;color:var(--ink2)}
-  footer p a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink)}
-  .soc{display:flex;gap:14px;flex:none}
-  .soc a{color:var(--ink);display:block;width:24px;height:24px}
-  .soc svg{width:24px;height:24px;display:block}
 
   @media (max-height:700px){
     .id img{width:50px;height:50px}.id h1{font-size:27px}
@@ -67,28 +60,21 @@
   <nav class="grp" aria-label="France">
     <div class="lab">France</div>
     <ol>
-      <li><a href="https://www.youtube.com/watch?v=ZiOWY0g6M4k"><span class="n">1</span><span class="t">Je veux <em>tout comprendre</em> sur la conciergerie Airbnb en France</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://www.youtube.com/watch?v=LrCqVi3I-NE"><span class="n">2</span><span class="t">Je veux automatiser ma conciergerie avec un logiciel</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://www.youtube.com/watch?v=ZiOWY0g6M4k"><span class="n">1</span><span class="t">Je veux tout comprendre sur la <em>conciergerie Airbnb en France</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://www.youtube.com/watch?v=LrCqVi3I-NE"><span class="n">2</span><span class="t">Je veux <em>automatiser ma conciergerie</em> avec un logiciel</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
     </ol>
   </nav>
 
   <nav class="grp" aria-label="Maroc">
     <div class="lab">Maroc</div>
     <ol>
-      <li><a href="https://lereseau-ma.com/rejoindre/doc?utm_source=instagram&utm_medium=bio&utm_campaign=lien-bio"><span class="n">3</span><span class="t">Je veux ouvrir ma structure de gestion locative au Maroc</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://join.saafka.com/"><span class="n">4</span><span class="t">Je veux devenir conseiller immobilier au Maroc</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://saafka.com/acheter"><span class="n">5</span><span class="t">Je veux investir dans l'immobilier au Maroc</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://saafka.com/vendre"><span class="n">6</span><span class="t">Je veux vendre mon logement au Maroc</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://lereseau-ma.com/rejoindre/doc?utm_source=instagram&utm_medium=bio&utm_campaign=lien-bio"><span class="n">3</span><span class="t">Je veux ouvrir ma <em>structure de gestion locative au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://join.saafka.com/"><span class="n">4</span><span class="t">Je veux <em>devenir conseiller immobilier au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://saafka.com/acheter"><span class="n">5</span><span class="t"><em>Je veux investir dans l'immobilier au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
+      <li><a href="https://saafka.com/vendre"><span class="n">6</span><span class="t"><em>Je veux vendre mon logement au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
     </ol>
   </nav>
 
-  <footer>
-    <p>Pour toute autre demande, un partenariat, un média :<br><a href="mailto:contact@mbgroup.com">contact@mbgroup.com</a></p>
-    <div class="soc">
-      <a href="https://www.instagram.com/martinbeauval.immo/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a>
-      <a href="https://www.youtube.com/@martinbeauval.conciergelite" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .6 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.3-1.6.4-3.2.4-4.8s-.1-3.2-.4-4.8zM9.8 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></a>
-    </div>
-  </footer>
 </main>
 </body>
 </html>
