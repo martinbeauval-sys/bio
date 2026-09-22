@@ -28,3 +28,5 @@ Les six cibles répondaient 200 le 22/09 à 23h50. Contact : contact@mbgroup.com
 
 ## DA
 Même famille que les stories Média / Rencontres : fond #0f1216, halo doré, Poppins ExtraBold, jaune ConciergElite #f8d74f pour l'action principale. Zone max 480 px, une colonne, cartes tactiles de 84 px de haut.
+
+- Vérification 22/09 23h55 : rendu pleine hauteur validé sur 375 px (six cartes, pied, aucun débordement). Piège outil : la capture du navigateur intégré est noire après un défilement en émulation mobile ; prendre une capture en viewport 375x1560 à la place.
