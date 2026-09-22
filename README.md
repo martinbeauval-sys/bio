@@ -30,3 +30,10 @@ Les six cibles répondaient 200 le 22/09 à 23h50. Contact : contact@mbgroup.com
 Même famille que les stories Média / Rencontres : fond #0f1216, halo doré, Poppins ExtraBold, jaune ConciergElite #f8d74f pour l'action principale. Zone max 480 px, une colonne, cartes tactiles de 84 px de haut.
 
 - Vérification 22/09 23h55 : rendu pleine hauteur validé sur 375 px (six cartes, pied, aucun débordement). Piège outil : la capture du navigateur intégré est noire après un défilement en émulation mobile ; prendre une capture en viewport 375x1560 à la place.
+
+## v3 (23/09/2026, 00h15) — retours de Martin
+- « Ne pas ressembler à un site généré par l'IA » : plus de fond sombre, de cartes, de dégradés ni de halo. Papier clair #f3efe6, encre noire, nom en Instrument Serif, liens en Inter, liste numérotée à filets fins, un seul accent jaune (surlignage de « tout comprendre »).
+- Tout visible sans défiler sur 375x812 (hauteur du document = hauteur de l'écran, pied à 798 px). Une règle `max-height:700px` resserre encore sur les petits écrans.
+- Supprimés : pitch « Opérateur, pas formateur », les trois chiffres, l'icône @, la ligne « © 2026 ». Gardés : Instagram et YouTube avec leurs vrais pictogrammes (SVG inline), la ligne contact.
+- Six liens dans l'ordre exact de la page Notion, libellés repris de la page.
+- Hébergement : Martin ne veut pas d'adresse GitHub. Netlify et Vercel n'ont ni CLI ni jeton sur ce Mac, et Netlify n'est pas connecté dans Chrome : impossible sans que Martin se connecte ou achète un domaine.
