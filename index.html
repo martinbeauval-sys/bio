@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Martin Beauval</title>
+<meta name="description" content="Martin Beauval, 26 ans, entrepreneur et investisseur immobilier entre la France et le Maroc. Conciergerie, réseau de conseillers, logiciel : tout ce que je construis, au même endroit.">
+<meta property="og:title" content="Martin Beauval">
+<meta property="og:description" content="Entrepreneur et investisseur immobilier, France et Maroc. Mes entreprises, mes vidéos, mon contact.">
+<meta property="og:image" content="assets/martin.jpg">
+<meta name="theme-color" content="#0f1216">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1216; --card:#161b22; --card2:#1b212a; --line:#2a313c;
+    --ink:#ffffff; --muted:#aab0ba; --muted2:#7d848f; --yellow:#f8d74f; --yellow-ink:#111111;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+  body{min-height:100svh;overflow-x:hidden;position:relative}
+  /* halo chaud, comme les stories */
+  body::before{content:"";position:fixed;inset:-40vh -40vw auto -40vw;height:110vh;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(60vw 60vw at 18% 8%, rgba(120,98,30,.55), transparent 62%),
+      radial-gradient(55vw 55vw at 88% 6%, rgba(70,58,110,.45), transparent 60%);
+    filter:blur(30px)}
+  .wrap{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:max(28px,env(safe-area-inset-top)) 20px 40px}
+
+  /* en-tete */
+  .hero{text-align:center;padding-top:18px}
+  .avatar{width:132px;height:132px;border-radius:50%;padding:4px;background:linear-gradient(135deg,var(--yellow),rgba(248,215,79,.15));margin:0 auto 18px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid var(--bg)}
+  .name{font-size:30px;font-weight:800;letter-spacing:-.01em;line-height:1.05}
+  .name .check{display:inline-block;width:20px;height:20px;vertical-align:-2px;margin-left:6px}
+  .role{margin-top:8px;color:var(--muted);font-size:14px;font-weight:500;line-height:1.45}
+  .role b{color:var(--ink);font-weight:600}
+  .tag{display:inline-flex;gap:8px;align-items:center;margin-top:14px;padding:8px 14px;border-radius:999px;background:var(--yellow);color:var(--yellow-ink);font-weight:700;font-size:13px}
+  .tag .flag{font-size:14px;letter-spacing:2px}
+  .pitch{margin:22px auto 0;font-size:15px;line-height:1.5;color:var(--ink);font-weight:500;max-width:34ch}
+  .pitch span{color:var(--muted)}
+
+  /* liens */
+  .section{margin-top:30px}
+  .kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);font-weight:700;margin:0 4px 10px}
+  .links{display:grid;gap:12px}
+  a.card{display:grid;grid-template-columns:52px 1fr 20px;align-items:center;gap:14px;text-decoration:none;color:inherit;
+    background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:20px;padding:16px 16px 16px 14px;
+    transition:transform .12s ease,border-color .12s ease;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  a.card:active{transform:scale(.985)}
+  a.card:hover{border-color:#3a4353}
+  .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-weight:800;font-size:14px;letter-spacing:.02em;color:var(--ink);background:#232a35;border:1px solid var(--line)}
+  .ico.y{background:var(--yellow);color:var(--yellow-ink);border-color:transparent}
+  .ico.r{background:#e2352b;border-color:transparent}
+  .ico img{width:28px;height:28px;object-fit:contain}
+  .t{font-size:16px;font-weight:700;line-height:1.2}
+  .s{margin-top:3px;font-size:12.5px;color:var(--muted);line-height:1.35;font-weight:500}
+  .arrow{color:var(--muted2);font-size:20px;line-height:1;text-align:right}
+  a.card.primary{background:linear-gradient(180deg,#f9dc66,var(--yellow));border-color:transparent;color:var(--yellow-ink)}
+  a.card.primary .s{color:rgba(17,17,17,.7)}
+  a.card.primary .ico{background:rgba(17,17,17,.12);border-color:transparent;color:var(--yellow-ink)}
+  a.card.primary .arrow{color:rgba(17,17,17,.6)}
+
+  /* preuves */
+  .proof{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .proof div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 8px;text-align:center}
+  .proof b{display:block;font-size:20px;font-weight:800;color:var(--yellow);letter-spacing:-.01em}
+  .proof span{display:block;margin-top:3px;font-size:11px;color:var(--muted);line-height:1.3;font-weight:500}
+
+  /* pied */
+  footer{margin-top:34px;text-align:center;color:var(--muted2);font-size:12.5px;line-height:1.7}
+  footer a{color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(255,255,255,.18)}
+  .social{display:flex;justify-content:center;gap:10px;margin-bottom:14px}
+  .social a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--ink);font-size:12px;font-weight:800;border-bottom:1px solid var(--line)}
+  @media (prefers-reduced-motion:reduce){a.card{transition:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="hero">
+    <div class="avatar"><img src="assets/martin.jpg" alt="Martin Beauval" width="132" height="132"></div>
+    <h1 class="name">Martin Beauval<svg class="check" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f8d74f"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#111" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></h1>
+    <p class="role"><b>26 ans</b> · entrepreneur et investisseur immobilier</p>
+    <div class="tag"><span class="flag">🇫🇷 🇲🇦</span> France &amp; Maroc</div>
+    <p class="pitch">Je construis les entreprises qui font tourner l'immobilier : conciergeries, réseau de conseillers, logiciel. <span>Ici, tout est au même endroit.</span></p>
+  </header>
+
+  <section class="section">
+    <p class="kicker">Commencer ici</p>
+    <div class="links">
+      <a class="card primary" href="https://martinbeauval-sys.github.io/masterclass/menage/">
+        <div class="ico">45'</div>
+        <div><div class="t">Masterclass gratuite : lancer sa conciergerie</div><div class="s">45 minutes de méthode, sans laisser ton mail. Le système que 600 conciergeries appliquent.</div></div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Mes entreprises</p>
+    <div class="links">
+      <a class="card" href="https://conciergelite.fr/">
+        <div class="ico y">CE</div>
+        <div><div class="t">ConciergElite</div><div class="s">L'accompagnement n°1 pour créer et développer sa conciergerie Airbnb en France.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://saafka.com/">
+        <div class="ico">SF</div>
+        <div><div class="t">Saafka</div><div class="s">Le réseau de conseillers immobiliers nouvelle génération au Maroc.</div></div>
+        <div class="arrow">›</div>
+      </a>
+      <a class="card" href="https://agencenode.com/">
+        <div class="ico">ND</div>
+        <div><div class="t">Node</div><div class="s">Le seul channel manager qui amène des propriétaires aux conciergeries.</div></div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="kicker">Me suivre</p>
+    <div class="links">
+      <a class="card" href="https://www.youtube.com/@martinbeauval.conciergelite">
+        <div class="ico r">▶</div>
+        <div><div class="t">YouTube</div><div class="s">Les vidéos longues : coulisses, méthodes, témoignages de membres.</div></div>
+        <div class="arrow">›</div>
+      </a>
+    </div>
+  </section>
+
+  <div class="proof" aria-label="Chiffres clés">
+    <div><b>+600</b><span>conciergeries accompagnées</span></div>
+    <div><b>2</b><span>pays, France et Maroc</span></div>
+    <div><b>4</b><span>entreprises actives</span></div>
+  </div>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.instagram.com/martinbeauval.immo/" aria-label="Instagram">IG</a>
+      <a href="https://www.youtube.com/@martinbeauval.conciergelite" aria-label="YouTube">YT</a>
+      <a id="mail-icon" href="mailto:CONTACT_EMAIL" aria-label="Email">@</a>
+    </div>
+    Une question, un partenariat, un média ?<br>
+    <a id="mail-link" href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>
+    <div style="margin-top:14px;font-size:11px;color:var(--muted2)">© <span id="y"></span> Martin Beauval</div>
+  </footer>
+</main>
+<script>
+  // Adresse de contact : une seule ligne a changer.
+  var CONTACT_EMAIL = "contact@mbgroup.com";
+  document.getElementById("mail-link").textContent = CONTACT_EMAIL;
+  document.getElementById("mail-link").href = "mailto:" + CONTACT_EMAIL;
+  document.getElementById("mail-icon").href = "mailto:" + CONTACT_EMAIL;
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
