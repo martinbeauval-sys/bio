@@ -50,3 +50,4 @@ Même famille que les stories Média / Rencontres : fond #0f1216, halo doré, Po
 - http://martinbeauval.com répond 200 sur la page.
 - Zimbra : organisation MB GROUP, domaine martinbeauval.com en « configuration recommandée » (OVH pose MX/SPF/DKIM Zimbra). Compte `contact@martinbeauval.com` prérempli (Martin Beauval, offre Starter incluse) ; le mot de passe est saisi par Martin, jamais par Claude.
 - Pièges : la fenêtre modale OVH dépasse la hauteur de la fenêtre Chrome, le bouton Suivant s'atteint par Tab ou par la touche End ; le mode textuel de la zone n'est pas dans l'arbre d'accessibilité, saisie au clavier après cmd+A.
+- 09h08 : certificat HTTPS émis (il a fallu retirer puis remettre le domaine côté GitHub pour déclencher l'émission), HTTPS forcé, http redirige en 301 vers https, www répond. Boîte contact@martinbeauval.com créée par Martin (Starter, 15 Go, active). Chantier terminé.
