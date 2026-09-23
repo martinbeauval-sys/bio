@@ -42,3 +42,11 @@ Même famille que les stories Média / Rencontres : fond #0f1216, halo doré, Po
 - Pied de page supprimé (plus de ligne contact, plus d'icônes). Surlignage jaune des mots-clés voulus par Martin, ligne par ligne, avec `box-decoration-break:clone` pour que le surlignage suive les retours à la ligne.
 - Domaine : Martin achète `martinbeauval.com` (libre le 23/09 à 00h30, .com et .fr). Registrar proposé : OVH (une adresse email MX Plan incluse avec le domaine : `contact@martinbeauval.com` gratuite).
 - À faire dès l'achat : (1) zone DNS chez OVH : 4 enregistrements A sur `@` vers 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153, et un CNAME `www` vers `martinbeauval-sys.github.io.` ; (2) `gh api -X PUT repos/martinbeauval-sys/bio/pages -f cname=martinbeauval.com` puis HTTPS forcé ; (3) fichier `CNAME` à la racine du dépôt ; (4) mettre `https://martinbeauval.com` en bio du compte @martinbeauval.immo.
+
+## Domaine en place (23/09/2026, 01h05)
+- Commande OVH 259074789 payée par Martin (9,59 € TTC, 1 an, compte MB GROUP, identifiant mw141066-ovh). Domaine livré vers 00h40, NS dns111/ns111.ovh.net.
+- Zone DNS posée en mode textuel : 4 A `@` vers 185.199.108-111.153, CNAME `www` vers martinbeauval-sys.github.io., MX et SPF OVH conservés ; entrées A/TXT OVH par défaut et `ftp` retirées.
+- GitHub Pages : `cname=martinbeauval.com`, fichier CNAME dans le dépôt ; certificat HTTPS en cours d'émission (`https_enforced` à passer à true dès que https répond, script en tâche de fond).
+- http://martinbeauval.com répond 200 sur la page.
+- Zimbra : organisation MB GROUP, domaine martinbeauval.com en « configuration recommandée » (OVH pose MX/SPF/DKIM Zimbra). Compte `contact@martinbeauval.com` prérempli (Martin Beauval, offre Starter incluse) ; le mot de passe est saisi par Martin, jamais par Claude.
+- Pièges : la fenêtre modale OVH dépasse la hauteur de la fenêtre Chrome, le bouton Suivant s'atteint par Tab ou par la touche End ; le mode textuel de la zone n'est pas dans l'arbre d'accessibilité, saisie au clavier après cmd+A.
