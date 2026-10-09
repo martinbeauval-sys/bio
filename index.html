@@ -3,77 +3,87 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Martin Beauval</title>
-<meta name="description" content="Martin Beauval, 26 ans, entrepreneur et investisseur immobilier en France et au Maroc.">
-<meta property="og:title" content="Martin Beauval">
-<meta property="og:description" content="Entrepreneur et investisseur immobilier, France et Maroc.">
+<title>Martin Beauval · Conciergerie</title>
+<meta name="description" content="Créer et développer sa conciergerie : trois vidéos pour commencer.">
+<meta property="og:title" content="Martin Beauval · Conciergerie">
+<meta property="og:description" content="Créer et développer sa conciergerie : les vidéos pour commencer.">
 <meta property="og:image" content="assets/martin.jpg">
-<meta name="theme-color" content="#f3efe6">
+<meta name="theme-color" content="#ffffff">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--paper:#f3efe6;--ink:#141412;--ink2:#5c5a54;--rule:#d9d3c4;--accent:#f0c93a}
+  :root{--bg:#ffffff;--ink:#0b1533;--ink2:#5a6480;--blue:#1f5eff;--blue2:#0b33b8;--soft:#eef3ff;--rule:#e3e9f7}
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
-  body{min-height:100svh;display:flex;flex-direction:column}
-  .page{width:100%;max-width:440px;margin:0 auto;padding:calc(18px + env(safe-area-inset-top)) 22px calc(14px + env(safe-area-inset-bottom));display:flex;flex-direction:column;min-height:100svh}
+  html,body{background:var(--bg);color:var(--ink);font-family:Poppins,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .page{max-width:440px;margin:0 auto;padding:calc(16px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom))}
 
   /* identite */
-  .id{display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--ink)}
-  .id img{width:58px;height:58px;border-radius:50%;object-fit:cover;flex:none}
-  .id h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:30px;line-height:1;letter-spacing:-.01em}
-  .id p{margin-top:5px;font-size:12.5px;line-height:1.35;color:var(--ink2)}
+  .id{display:flex;align-items:center;gap:12px;padding-bottom:6px}
+  .id img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 2px #fff,0 0 0 4px var(--blue)}
+  .id h1{font-size:19px;font-weight:800;line-height:1.1;letter-spacing:-.01em}
+  .id p{margin-top:3px;font-size:12.5px;line-height:1.35;color:var(--ink2);font-weight:500}
+  .id p b{color:var(--blue);font-weight:700}
 
-  /* liens */
-  .grp{margin-top:14px}
-  .grp + .grp{margin-top:8px}
-  .lab{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);font-weight:600;padding:0 0 4px}
-  ol{list-style:none}
-  li a{display:grid;grid-template-columns:24px 1fr 16px;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink);font-size:15px;font-weight:500;line-height:1.3}
-  li:last-child a{border-bottom:0}
-  li a .n{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-size:15px;color:var(--ink2)}
-  li a .t em{font-style:normal;background:linear-gradient(transparent 62%,var(--accent) 62%);-webkit-box-decoration-break:clone;box-decoration-break:clone}
-  li a .ar{width:16px;height:16px;color:var(--ink)}
-  li a:active{opacity:.55}
+  /* cartes video */
+  .v{display:block;text-decoration:none;color:inherit;margin-top:10px;padding:10px 10px 10px;border:1px solid var(--rule);border-radius:20px;background:#fff;box-shadow:0 6px 20px rgba(11,51,184,.07)}
+  .v:active{transform:scale(.985)}
+  .lab+.th{margin-top:8px}
+  .lab{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);background:var(--soft);padding:5px 10px;border-radius:999px}
+  .lab i{width:6px;height:6px;border-radius:50%;background:var(--blue);display:block}
+  .th{position:relative;margin-top:0;border-radius:14px;overflow:hidden;aspect-ratio:16/9;background:var(--soft)}
+  .th img{width:100%;height:100%;object-fit:cover;display:block}
+  .th .du{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.78);color:#fff;font-size:11px;font-weight:600;padding:2px 6px;border-radius:5px}
+  .t{margin-top:8px;font-size:15px;font-weight:700;line-height:1.3;letter-spacing:-.005em}
+  .btn{margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-size:14.5px;font-weight:700}
+  .btn svg{width:18px;height:18px}
+  /* bouton en mouvement : leger battement + reflet qui traverse */
+  .btn{position:relative;overflow:hidden;animation:pulse 2.4s ease-in-out infinite}
+  .btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:shine 2.4s ease-in-out infinite}
+  .v:nth-of-type(2) .btn,.v:nth-of-type(2) .btn::after{animation-delay:.8s}
+  .v:nth-of-type(3) .btn,.v:nth-of-type(3) .btn::after{animation-delay:1.6s}
+  @keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(31,94,255,.45)}50%{transform:scale(1.035);box-shadow:0 0 0 8px rgba(31,94,255,0)}}
+  @keyframes shine{0%{left:-60%}55%,100%{left:130%}}
+  @media (prefers-reduced-motion:reduce){.btn,.btn::after{animation:none}}
 
-
-  @media (max-height:700px){
-    .id img{width:50px;height:50px}.id h1{font-size:27px}
-    li a{padding:9px 0;font-size:14.5px}.grp{margin-top:10px}
-  }
+  .foot{margin-top:22px;text-align:center;font-size:11.5px;color:var(--ink2)}
+  .foot b{color:var(--ink)}
 </style>
 </head>
 <body>
 <main class="page">
 
   <header class="id">
-    <img src="assets/martin.jpg" alt="" width="58" height="58">
+    <img src="assets/martin.jpg" alt="Martin Beauval" width="56" height="56">
     <div>
       <h1>Martin Beauval</h1>
-      <p>26 ans. Entrepreneur et investisseur immobilier, en France et au Maroc.</p>
+      <p>+50 logements en gestion. J'aide à <b>créer et développer sa conciergerie</b>.</p>
     </div>
   </header>
 
-  <nav class="grp" aria-label="France">
-    <div class="lab">France</div>
-    <ol>
-      <li><a href="https://www.youtube.com/watch?v=ZiOWY0g6M4k"><span class="n">1</span><span class="t">Je veux tout comprendre sur la <em>conciergerie Airbnb en France</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://www.youtube.com/watch?v=LrCqVi3I-NE"><span class="n">2</span><span class="t">Je veux <em>automatiser ma conciergerie</em> avec un logiciel</span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-    </ol>
-  </nav>
+  <a class="v" href="https://www.youtube.com/watch?v=s5kCcc6N3Lk">
+    <div class="th"><img src="https://i.ytimg.com/vi/s5kCcc6N3Lk/maxresdefault.jpg" alt="" loading="eager"><span class="du">11:28</span></div>
+    <div class="t">Conciergerie Airbnb : mon activité vue de l'intérieur (+50 logements)</div>
+    <div class="btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>Regarder la vidéo</div>
+  </a>
 
-  <nav class="grp" aria-label="Maroc">
-    <div class="lab">Maroc</div>
-    <ol>
-      <li><a href="https://lereseau-ma.com/rejoindre/doc?utm_source=instagram&utm_medium=bio&utm_campaign=lien-bio"><span class="n">3</span><span class="t">Je veux ouvrir ma <em>structure de gestion locative au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://join.saafka.com/"><span class="n">4</span><span class="t">Je veux <em>devenir conseiller immobilier au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://saafka.com/acheter"><span class="n">5</span><span class="t">Je veux <em>investir dans l'immobilier au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-      <li><a href="https://saafka.com/vendre"><span class="n">6</span><span class="t">Je veux <em>vendre mon logement au Maroc</em></span><svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a></li>
-    </ol>
-  </nav>
+  <a class="v" href="https://www.youtube.com/watch?v=ZiOWY0g6M4k">
+    <span class="lab"><i></i>Si tu pars de 0 👇</span>
+    <div class="th"><img src="https://i.ytimg.com/vi/ZiOWY0g6M4k/maxresdefault.jpg" alt="" loading="eager"><span class="du">45:58</span></div>
+    <div class="t">Formation offerte : comment se lancer dans la conciergerie en partant de zéro</div>
+    <div class="btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>Regarder la vidéo</div>
+  </a>
+
+  <a class="v" href="https://www.youtube.com/watch?v=CgfJYh9tZK4">
+    <span class="lab"><i></i>Si tu veux signer + de logements 👇</span>
+    <div class="th"><img src="https://i.ytimg.com/vi/CgfJYh9tZK4/maxresdefault.jpg" alt="" loading="eager"><span class="du">22:57</span></div>
+    <div class="t">Le système qui m'apporte des propriétaires sans prospecter (copie-le)</div>
+    <div class="btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>Regarder la vidéo</div>
+  </a>
+
+  <p class="foot">Accompagnement <b>ConciergElite</b> · le lien est dans la description de chaque vidéo</p>
 
 </main>
 </body>

@@ -3,7 +3,15 @@
 Page mobile unique, sans dépendance, hébergée sur GitHub Pages : https://martinbeauval-sys.github.io/bio/
 Dépôt : martinbeauval-sys/bio (branche main, racine). Mise à jour = modifier `index.html`, `git push`, en ligne en une minute.
 
-## Contenu (v2 du 22/09/2026, d'après la page Notion « Tasks remise en forme IG », 3b9d669b2f38809da777c7632ce62250)
+## Contenu v3 (09/10/2026, en ligne sur martinbeauval.com)
+Demande de Martin : tout concentrer sur l'accompagnement ConciergElite. Ses abonnés sont soit des conciergeries avancées, soit des gens pas encore lancés. Page = 3 cartes vidéo YouTube (miniature, titre, bouton « Regarder la vidéo » animé), DA bleu et blanc d'Instagram, Poppins.
+1. Sans étiquette : « Conciergerie Airbnb : mon activité vue de l'intérieur (+50 logements) » (s5kCcc6N3Lk, vidéo épinglée).
+2. « Si tu pars de 0 👇 » : « Formation offerte : comment se lancer dans la conciergerie en partant de zéro » (ZiOWY0g6M4k, CTA étude de marché).
+3. « Si tu veux signer + de logements 👇 » : « Le système qui m'apporte des propriétaires sans prospecter » (CgfJYh9tZK4, CTA étude de marché).
+Écartées : vidéo Carte G (CTA Node), ménage, immobilier sans CDI. Les liens Maroc (le réseau, Saafka) ne sont plus dans la bio. Bouton : battement + reflet, décalés de 0,8 s par carte, coupés si « réduire les animations ». Maquette validée : `/Desktop/Lien en bio - ConciergElite.html` (photo embarquée). Texte de bio proposé : dernière ligne « Ma conciergerie vue de l'intérieur 👇 ».
+
+## Contenu v2 (22/09/2026, remplacé le 09/10)
+(22/09/2026, d'après la page Notion « Tasks remise en forme IG », 3b9d669b2f38809da777c7632ce62250)
 Objectifs du brief : (1) rediriger un lead au bon endroit, (2) montrer que Martin n'est pas un formateur. D'où le pitch « Opérateur, pas formateur » et six boutons d'intention « Je veux… », dans l'ordre du brief, groupés France / Maroc :
 1. Tout comprendre sur la conciergerie Airbnb → vidéo « Formation Gratuite Conciergerie : se lancer en partant de zéro » (ZiOWY0g6M4k), bouton principal jaune.
 2. Automatiser ma conciergerie → vidéo « Quel logiciel pour ton Airbnb en 2026 » (LrCqVi3I-NE).
